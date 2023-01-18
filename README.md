@@ -6,7 +6,7 @@
 In a root folder run:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 After instalation navigate to folder {rootFoler}/backend ,then to turn on server
