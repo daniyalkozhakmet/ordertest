@@ -1,7 +1,7 @@
 # ORDER TEST
 Необходимо реализовать систему для приема заказов на разработку сайтов. Отправить ссылку на гитхаб с инструкцией по запуску проекта.
 
-## Installation dependecied for BACKEND
+## Installation dependecies for BACKEND
 
 In a root folder run:
 
