@@ -17,7 +17,7 @@ class CustomUser(AbstractUser):
     birth = models.DateField(auto_now=False, auto_now_add=False, null=True, blank=True)
     username = None
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ('first_name','last_name')
+    REQUIRED_FIELDS = ('first_name','last_name','birth')
     objects = CustomUserManager()
 
     def __str__(self):
