@@ -2,7 +2,7 @@
 
 Необходимо реализовать систему для приема заказов на разработку сайтов. Отправить ссылку на гитхаб с инструкцией по запуску проекта.
 
-## Installation dependecies for BACKEND
+## Installation dependencies for BACKEND
 
 In a root folder run:
 
@@ -10,7 +10,7 @@ In a root folder run:
 pip install -r requirements.txt
 ```
 
-After instalation navigate to folder {rootFoler}/backend ,then to turn on server
+After installation navigate to folder ({rootFoler}/backend) cd bacend ,then to turn on server
 
 ```bash
 python manage.py runserver
@@ -28,9 +28,9 @@ python manage.py createsuperuser
 
 Server should start at http://127.0.0.1:8000/
 
-## Installation dependecied for FRONTEND
+## Installation dependencies for FRONTEND
 
-Navigate to folder : {rootFoler}/frontend ,then run following comand ti install dependecies:
+Navigate to folder : ({rootFoler}/frontend) cd frontend ,then run following comand to install dependencies:
 
 ```bash
 npm install
