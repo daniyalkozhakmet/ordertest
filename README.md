@@ -16,7 +16,11 @@ After instalation navigate to folder {rootFoler}/backend ,then to turn on server
 python manage.py runserver
 ```
 
-You can create admin user running following command or log in {email:admin@mail.ri;password:admin}:
+You can create admin user running following command or log in
+{
+email:admin@mail.ru;
+password:admin
+}:
 
 ```bash
 python manage.py createsuperuser
