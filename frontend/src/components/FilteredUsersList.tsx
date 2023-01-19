@@ -8,7 +8,6 @@ type usersType = {
 };
 export const FilteredUsersList: React.FC = () => {
   const { users, loading, error } = useAppSelector((state) => state.filterUser);
-  console.log(error);
   if (users == null) {
     return (
       <AlertStatic

@@ -64,7 +64,6 @@ export const ProfilePage: React.FC = () => {
         ...values,
         access: user ? user.access : "",
       };
-      console.log(userData);
       dispatch(userProfileUpdate(userData));
       // setIsLoggedIn(true);
     },

@@ -11,7 +11,6 @@ export const OrderPagination: React.FC = () => {
     } else {
       dispatch(getOrders({ current: changePage, qty: 5 }));
     }
-    console.log({ current: changePage, qty: 5 });
   }, [changePage]);
 
   const dispatch = useAppDispatch();

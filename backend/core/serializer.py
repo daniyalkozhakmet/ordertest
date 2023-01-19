@@ -22,9 +22,7 @@ class OrderSerializer(serializers.ModelSerializer):
             'owner': {'required': True,'validators': [],'write_only':True},
         }
     def create(self, validated_data):
-        print(validated_data)
         order=Order.objects.create(**validated_data)
-        print(order)
         return order
     def validate(self, attrs):
         return super().validate(attrs)

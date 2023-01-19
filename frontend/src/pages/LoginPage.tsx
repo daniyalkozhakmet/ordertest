@@ -38,7 +38,6 @@ export const LoginPage: React.FC = () => {
         .required("Please enter password"),
     }),
     onSubmit: (values) => {
-      console.log(values);
       dispatch(userLogin(values));
       // setIsLoggedIn(true);
     },

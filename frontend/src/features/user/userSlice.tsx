@@ -52,7 +52,6 @@ export const userProfileUpdate = createAsyncThunk(
   "users/updateUser",
   async (data: updateDataType, { rejectWithValue }) => {
     try {
-      console.log(data.access);
       let config = {
         headers: {
           Authorization: `Bearer ${data.access}`,
@@ -62,7 +61,6 @@ export const userProfileUpdate = createAsyncThunk(
       localStorage.setItem("user", JSON.stringify(response.data));
       return response.data;
     } catch (error: any) {
-      console.log(error);
       let errorData: any[] = [];
       if (typeof error.response.data == "object") {
         for (const key in error.response.data) {
@@ -115,7 +113,6 @@ export const userProfileImageUpload = createAsyncThunk(
       if (data.access) uploadData.append("access", data.access);
       uploadData.append("image", data.image);
       const response = await axios.put("/api/user/profile", uploadData, config);
-      console.log(response.data);
       return response.data;
     } catch (error: any) {
       let errorData: any[] = [];
@@ -144,7 +141,6 @@ export const getProfile = createAsyncThunk(
       if (userLocalStorage) {
         localStorage.setItem("user", JSON.stringify(response.data));
       }
-      console.log(response.data);
       return response.data;
     } catch (error: any) {
       let errorData: any[] = [];

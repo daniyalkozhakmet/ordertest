@@ -24,7 +24,6 @@ export const getProfileFilter = createAsyncThunk(
   "user/profile/filter",
   async (data: dataType, { rejectWithValue }) => {
     try {
-      console.log(data);
       if (data.access) {
         let config = {
           headers: {

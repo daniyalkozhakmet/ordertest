@@ -19,7 +19,6 @@ export const UsersPage = () => {
       search: Yup.string().required("Please type something"),
     }),
     onSubmit: (values, { resetForm }) => {
-      console.log(values);
       if (user) {
         dispatch(
           getProfileFilter({ search: values.search, access: user.access })
